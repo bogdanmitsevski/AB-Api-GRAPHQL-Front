@@ -7,7 +7,12 @@ const totalDevicesByGroups = gql`
       totalDevicesByGroupA,
       totalDevicesByGroupB,
       totalDevicesByGroupC,
-      allDevices
+      allDevices,
+      allExperiments {
+      id,
+      key,
+      value
+      }
      }
     `;
 

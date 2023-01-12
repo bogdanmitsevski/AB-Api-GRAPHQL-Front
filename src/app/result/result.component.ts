@@ -24,13 +24,12 @@ export class ResultComponent {
   ngOnInit() {
     this.service.getExperiments().subscribe(res => {
       {
-      this.groupsA = res.data.totalDevicesByGroupA,
-      this.groupsB = res.data.totalDevicesByGroupB,
-      this.groupsC = res.data.totalDevicesByGroupC,
-      this.Devices = res.data.allDevices,
-      this.experiments = res.data.allExperiments
+        this.groupsA = res.data.totalDevicesByGroupA,
+          this.groupsB = res.data.totalDevicesByGroupB,
+          this.groupsC = res.data.totalDevicesByGroupC,
+          this.Devices = res.data.allDevices,
+          this.experiments = res.data.allExperiments
       }
-      console.log(this.groupsA);
     })
   }
 }
